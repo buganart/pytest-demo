@@ -37,14 +37,23 @@ Put in `conftest.py` at same level of test file or in any parent (but still
 inside test directory).
 
 # Parametrized fixtures
+
+1. `pytest.fixture(params=[1, 2])`
+2. `@pytest.mark.parametrize("foo", [1, 2])`
+
+Last part can also be used with `indirect=True`.
+
 # Coverage
-## Report in terminal
+## Terminal report
 
-    pytest --cov
+    pytest --cov my_pkg
 
-## Report html
+## HTML report
 
-    pytest --cov-report html
+    pytest --cov my_pkg --cov-report html
+
+Browse coverage in browser
+
     chromium htmlcov/index.html
 
 ## codecov.io

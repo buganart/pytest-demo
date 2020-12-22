@@ -38,10 +38,10 @@ inside test directory).
 
 # Parametrized fixtures
 
-1. `pytest.fixture(params=[1, 2])`
-2. `@pytest.mark.parametrize("foo", [1, 2])`
+1. Parametrize fixture during definition: `@pytest.fixture(params=[1, 2])`
+2. Parametrize test function: `@pytest.mark.parametrize("foo", [1, 2])`
 
-Last part can also be used with `indirect=True`.
+Second option can also be used with `indirect=True`.
 
 # Coverage
 ## Terminal report
